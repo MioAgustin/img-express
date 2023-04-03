@@ -6,7 +6,7 @@ const {connectdb} = require('./db.js')
 
 // App configuration
 const app = express();
-app.set('port', 80)
+app.set('port', 8000)
 app.set('view engine', 'ejs')
 app.set('views', __dirname)
 app.use(json())
