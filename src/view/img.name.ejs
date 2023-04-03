@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/478787.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>Website A</title>
+</head>
+<body>
+    <div class="container-all">
+        <h1> 
+            Img Of <%= result[0].name %>
+        </h1>
+        <div class="container-data-1">
+            <% for (let i = 0; i < result.length; i++) { %>
+            <div class="container-data">
+                <div class="container-text">
+                    <h1>
+                        ID: <%= result[i].id %>
+                    </h1>
+                </div>
+                <div class="container-img">
+                    <img src="<%= result[i].url %>" alt="">
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
